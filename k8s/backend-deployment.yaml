@@ -18,7 +18,7 @@ spec:
         command: ['sh', '-c', 'until nc -z database-service 5432; do echo waiting for database; sleep 2; done;']
       containers:
       - name: backend
-        image: papemor221/employee-api-kube:v2.1.0
+        image: papemor221/employee-api-kube:v2.2.0
         #envFrom:
         #  - configMapRef:
         #      name: backend-config
